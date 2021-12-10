@@ -12,8 +12,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.linkedin.com/in/*"],
-      "js": ["main.js"],
-      "css": ["main.css"]
+      "js": ["/static/js/main.js"],
+      "css": ["/static/js/main.css"]
     }
   ],
   "start_url": ".",
