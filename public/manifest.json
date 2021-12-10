@@ -13,7 +13,7 @@
     {
       "matches": ["https://*.linkedin.com/in/*"],
       "js": ["/static/js/main.js"],
-      "css": ["/static/js/main.css"]
+      "css": ["/static/css/main.css"]
     }
   ],
   "start_url": ".",
