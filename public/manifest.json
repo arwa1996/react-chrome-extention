@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "short_name": "React App",
   "name": "user Injection by react",
   "version": "0.1.0",
@@ -9,15 +9,16 @@
     "48": "logo192.png",
     "128": "logo512.png"
   },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-nmipgaohobmgagabcmdnelggdiffanne'; object-src 'self'",
   "content_scripts": [
     {
-      "matches": ["https://*.linkedin.com/in/*"],
+      "matches": ["<all_urls>"],
       "js": ["/static/js/main.js"],
       "css": ["/static/css/main.css"]
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "permissions": ["activeTab"]
 }
